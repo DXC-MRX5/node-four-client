@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  background: url("./components/media/bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  border: none;
+  background: none;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn:hover{
+  color: aqua;
+  font-size: 30px;
+}
+.icn{
+  margin-top: -15px;
+  margin-right: -5px;
+  width: 50px;
+  height: 50px;
+  color: antiquewhite;
+  border: none;
+  cursor: pointer;
+  animation: rotateB 2s ease-in-out;
+}
+@keyframes rotateB {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(-90deg);
+  }
+}
+.backBtn{
+  width: 100px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: aliceblue;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.backBtn:hover{
+  color: aquamarine;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.register{
+  width: 450px;
+  height: 470px;
+  background-color: white;
+  background-color: rgba(192, 216, 236, 0.15);
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  animation: appear 2s ease-in-out;
+}
+@keyframes appear {
+  0%{
+    transform: translateY(-500px);
+    width: 300px;
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.register h2{
+  width: 290px;
+  font-family: 'Foldit', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(128, 125, 125);
+}
+.box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+label{
+  font-family: 'Josefin Sans', sans-serif;
+  color: aliceblue;
+  font-size: 20px;
+}
+input{
+  background-color: rgba(0, 0, 0, 0.20);
+  height: 45px;
+  width: 240px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+input:hover{
+  background-color: rgba(0, 0, 0, 0.082);
+  border-bottom: 1px solid white;
+}
+input:focus{
+  background-color: rgba(0, 0, 0, 0.048);
+  color: white;
+  font-size: 22px;
+}
+.Btn{
+  width: 150px;
+  height: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.Btn:hover{
+  background-color: rgba(0, 0, 0, 0.863);
+  color: rgb(114, 241, 241);
+}
+.login{
+  margin-top: 20px;
+  border: none;
+  background: none;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login:hover{
+  color: aqua;
+  font-size: 18px;
+}
+.logForm{
+  width: 450px;
+  height: 250px;
+  background-color: white;
+  background-color: rgba(192, 216, 236, 0.15);
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  animation: appear 1.5s ease-in-out;
+}
+@keyframes appear {
+  0%{
+    transform: translateY(-500px);
+    width: 300px;
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.logForm h2{
+  font-family: 'Foldit', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(128, 125, 125);
+}
